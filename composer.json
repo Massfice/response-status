@@ -1,0 +1,18 @@
+{
+    "name": "massfice/response-status",
+    "description": "Package contains response-status class, that contains info about validation status, response http code, errors array, messages, etc. Project for my diploma.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massfice",
+            "email": "adrian.marian.tomasz.larysz@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Massfice\\ResponseStatus\\": "src/"
+        }
+    }
+}
