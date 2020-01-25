@@ -29,6 +29,11 @@ abstract class ResponseStatus  {
     public function isError() : bool {
         return count($this->errors) > 0;
     }
+
+    public function setLocation(string $location) {
+        $header = "Location: ".$location;
+        $this->headers[] = $header;
+    }
 }
 
 ?>
