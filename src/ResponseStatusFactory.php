@@ -3,7 +3,7 @@
 namespace Massfice\ResponseStatus;
 
 class ResponseStatusFactory {
-    public function create(int $code) : ResponseStatus {
+    public static function create(int $code) : ResponseStatus {
         $code = '\\Massfice\\ResponseStatus\\c'.$code;
 
         if(class_exists($code) && \is_subclass_of($code,'\\Massfice\\ResponseStatus\\ResponseStatus')) {
