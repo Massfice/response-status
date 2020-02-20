@@ -34,6 +34,11 @@ abstract class ResponseStatus  {
         $header = "Location: ".$location;
         $this->headers[] = $header;
     }
+
+    public function setCache(int $maxAge, string $type) {
+        $header = "Cache-Control: ".$type.", max-age=".$maxAge;
+        $this->headers[] = $header;
+    }
 }
 
 ?>
